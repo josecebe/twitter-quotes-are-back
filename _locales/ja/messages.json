@@ -1,0 +1,26 @@
+{
+  "twitterQuotesExtensionName": {
+    "message": "Twitter Quotes are back!"
+  },
+  "twitterQuotesExtensionDescription": {
+    "message": "Twitter Quotes are back!"
+  },
+  "twitterQuotesRetweet": {
+    "message": "件のリツイート"
+  },
+  "twitterQuotesRetweetTitle": {
+    "message": "このツイートのリツイートを見る"
+  },
+  "twitterQuotesQuotes": {
+    "message": "引用リツイート"
+  },
+  "twitterQuotesQuotesTitle": {
+    "message": "このツイートの引用リツイートを見る"
+  },
+  "twitterQuotesLikes": {
+    "message": "件のいいね"
+  },
+  "twitterQuotesLikesTitle": {
+    "message": "このツイートのいいねを見る"
+  }
+}
