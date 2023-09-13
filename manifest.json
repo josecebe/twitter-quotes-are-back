@@ -21,5 +21,12 @@
   ],
 
   "permissions": [
-  ]
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "59dd32a4-5241-11ee-be56-0242ac120002@josecebe.com",
+      "strict_min_version": "52.0"
+    }
+  }
 }

@@ -59,7 +59,7 @@ let createQuotedRepliesButton = (article) => {
     const fontFamily = getElementCssStyle(article.querySelector('[data-testid="app-text-transition-container"]'), 'font-family').replaceAll('"', '');
 
     container.innerHTML = `
-        <div style="padding: 10px 0; border-top: 1px solid ${borderColor}; font-size: ${fontSize};">
+        <div class="twitter-quotes-options" style="border-top-color: ${borderColor}; font-size: ${fontSize};">
             <a href="/${username}/status/${statusId}/retweets"
                     class="twitter-quotes-option twitter-quotes-option-retweets "
                     style="color: ${buttonColor}; font-family: ${fontFamily};"

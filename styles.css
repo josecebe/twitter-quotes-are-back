@@ -1,3 +1,9 @@
+.twitter-quotes-options {
+	padding: 10px 0;
+	border-top-width: 1px;
+	border-top-style: solid;
+}
+
 .twitter-quotes-option {
 	display: inline-flex;
 	margin-right: 10px;
