@@ -1,7 +1,9 @@
 .twitter-quotes-options {
-	padding: 10px 0;
+	padding: 8px 0;
 	border-top-width: 1px;
 	border-top-style: solid;
+	display: flex;
+  	flex-direction: row;
 }
 
 .twitter-quotes-option {
@@ -10,7 +12,7 @@
 	text-decoration: none;
 	align-items: center;
 	flex-direction: row;
-	padding: 3px;
+	padding: 5px;
 	border-radius: 6px;
 	transition: background 0.2s ease-out;
 }
@@ -30,6 +32,7 @@
 	color: rgb(249, 24, 128) !important;
 }
 
-.twitter-quotes-option svg {
-	margin-right: 5px;
+.twitter-quotes-option-number, .twitter-quotes-option svg {
+	margin-right: 4px;
+	font-weight: bold;
 }

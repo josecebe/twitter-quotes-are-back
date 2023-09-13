@@ -1,0 +1,26 @@
+{
+  "twitterQuotesExtensionName": {
+    "message": "Twitter Quotes are back!"
+  },
+  "twitterQuotesExtensionDescription": {
+    "message": "Twitter Quotes are back!"
+  },
+  "twitterQuotesRetweet": {
+    "message": "Retweets"
+  },
+  "twitterQuotesRetweetTitle": {
+    "message": "Retweets dieses Tweets anzeigen"
+  },
+  "twitterQuotesQuotes": {
+    "message": "Zitate"
+  },
+  "twitterQuotesQuotesTitle": {
+    "message": "Zitate dieses Tweets anzeigen"
+  },
+  "twitterQuotesLikes": {
+    "message": "Gefällt mir"
+  },
+  "twitterQuotesLikesTitle": {
+    "message": "Gefällt mir dieses Tweets anzeigen"
+  }
+}

@@ -1,9 +1,10 @@
 {
   "author": "josecebe",
   "manifest_version": 3,
-  "name": "Twitter Quotes are back!",
-  "version": "1.0",
-  "description": "Twitter Quotes are back!",
+  "name": "__MSG_twitterQuotesExtensionName__",
+  "version": "1.0.1",
+  "description": "__MSG_twitterQuotesExtensionDescription__",
+  "default_locale": "en",
   "icons": {
     "48": "icons/border-48.png"
   },

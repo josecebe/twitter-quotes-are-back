@@ -32,9 +32,9 @@ let getStatusHrefs = (hrefs, username) => {
 
 let getStatusIdFromHrefs = (statusHrefs) => {
     return statusHrefs
-        .shift() // first status href
+        .shift()
         .match(/https:\/\/twitter.com\/[a-zA-Z0-9_]+\/status\/([0-9]+)/) // regex to get and capture status id
-        .pop(); // captured status id
+        .pop();
 };
 
 let getStatusId = (article) => {
@@ -51,35 +51,37 @@ let createQuotedRepliesButton = (article) => {
     const statusId = getStatusId(article);
 
     const retweetIcon = article.querySelector('[data-testid="retweet"] svg, [data-testid="unretweet"] svg').outerHTML;
-    const likeIcon = article.querySelector('[data-testid="like"] svg, [data-testid="unlike"] svg').outerHTML;
     const buttonColor = getElementCssStyle(article.querySelector('[data-testid="reply"] svg'), 'color');
 
     const borderColor = getElementCssStyle(article.querySelector('[data-testid="reply"]').parentNode.parentNode, 'border-top-color');
     const fontSize = getElementCssStyle(article.querySelector('[data-testid="app-text-transition-container"]').parentNode.nextElementSibling, 'font-size');
     const fontFamily = getElementCssStyle(article.querySelector('[data-testid="app-text-transition-container"]'), 'font-family').replaceAll('"', '');
 
+    const retweetCount = article.querySelector('[data-testid="retweet"], [data-testid="unretweet"]').textContent || 0;
+    const likeCount = article.querySelector('[data-testid="like"], [data-testid="unlike"]').textContent || 0;
+
     container.innerHTML = `
         <div class="twitter-quotes-options" style="border-top-color: ${borderColor}; font-size: ${fontSize};">
             <a href="/${username}/status/${statusId}/retweets"
                     class="twitter-quotes-option twitter-quotes-option-retweets "
                     style="color: ${buttonColor}; font-family: ${fontFamily};"
-                    title="See who retweeted this tweet">
-                ${retweetIcon}
-                <span>Retweets<span>
+                    title="${chrome.i18n.getMessage("twitterQuotesRetweetTitle")}">
+                <span class="twitter-quotes-option-number">${retweetCount}</span>
+                <span>${chrome.i18n.getMessage("twitterQuotesRetweet")}<span>
             </a>
             <a href="/${username}/status/${statusId}/quotes"
                     class="twitter-quotes-option twitter-quotes-option-quotes "
                     style="color: ${buttonColor}; font-family: ${fontFamily};"
-                    title="See who quoted this tweet">
+                    title="${chrome.i18n.getMessage("twitterQuotesQuotesTitle")}">
                 ${retweetIcon}
-                <span>Quotes</span>
+                <span>${chrome.i18n.getMessage("twitterQuotesQuotes")}</span>
             </a>
             <a href="/${username}/status/${statusId}/likes"
                     class="twitter-quotes-option twitter-quotes-option-likes "
                     style="color: ${buttonColor}; font-family: ${fontFamily};"
-                    title="See liked this tweet">
-                ${likeIcon}
-                <span>Likes</span>
+                    title="${chrome.i18n.getMessage("twitterQuotesLikesTitle")}">
+                <span class="twitter-quotes-option-number">${likeCount}</span>
+                <span>${chrome.i18n.getMessage("twitterQuotesLikes")}</span>
             </a>
         </div>
     `;
