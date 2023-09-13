@@ -1,1 +1,0 @@
-Twitter Quotes are back!
