@@ -16,7 +16,7 @@ Twitter has adjusted access to view post interactions like quotes, retweets, and
 
 To install the "Twitter Quotes are back!" extension, follow these simple steps:
 
-1. Download the extension from the Chrome Web Store (not yet in the store) or [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/twitter-quotes-are-back).
+1. Download the extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/twitter-quotes-are-back/bbpjhggnbaikfoankcdaieeohbjdnadc) or [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/twitter-quotes-are-back).
 
 2. Click the "Add to Chrome" (or "Add to Firefox") button.
 
@@ -27,6 +27,17 @@ To install the "Twitter Quotes are back!" extension, follow these simple steps:
 ## How It Works
 
 This extension is designed to work exclusively on Twitter. It adds convenient buttons to tweets that allow you to access quoted replies, retweets, and likes with a single click. No more searching or navigating through Twitter's interface to find this information.
+
+## Supported Languages
+
+- English
+- Español (Spanish)
+- Português (Portuguese)
+- Français (French)
+- Deutsch (German)
+- Italiano (Italian)
+- Català (Catalan)
+- 日本語 (Japanese)
 
 ## Credits
 
