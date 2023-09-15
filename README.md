@@ -1,4 +1,4 @@
-# ![Twitter Quotes are back!](https://i.imgur.com/VRjmGhM.png) Twitter Quotes are back!
+# ![Twitter Quotes are back!](https://i.imgur.com/VRjmGhM.png) Twitter Quotes are back! (v1.0.2)
 
 ![Twitter Quotes are back!](https://i.imgur.com/W92S0Xw.png)
 

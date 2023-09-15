@@ -1,38 +1,38 @@
 .twitter-quotes-options {
-	padding: 8px 0;
-	border-top-width: 1px;
-	border-top-style: solid;
-	display: flex;
-  	flex-direction: row;
+    border-top-style: solid;
+    border-top-width: 1px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 8px 0;
 }
 
 .twitter-quotes-option {
-	display: inline-flex;
-	margin-right: 10px;
-	text-decoration: none;
-	align-items: center;
-	flex-direction: row;
-	padding: 5px;
-	border-radius: 6px;
-	transition: background 0.2s ease-out;
+    align-items: center;
+    border-radius: 6px;
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: 10px;
+    padding: 5px;
+    text-decoration: none;
+    transition: background 0.2s ease-out;
 }
 
 .twitter-quotes-option-retweets:hover {
-	background: rgba(29, 155, 240, 0.1);
-	color: rgb(29, 155, 240) !important;
+    background: rgba(29, 155, 240, 0.1);
+    color: rgb(29, 155, 240) !important;
 }
 
 .twitter-quotes-option-quotes:hover {
-	background: rgba(0, 186, 124, 0.1);
-	color: rgb(0, 186, 124) !important;
+    background: rgba(0, 186, 124, 0.1);
+    color: rgb(0, 186, 124) !important;
 }
 
 .twitter-quotes-option-likes:hover {
-	background: rgba(249, 24, 128, 0.1);
-	color: rgb(249, 24, 128) !important;
+    background: rgba(249, 24, 128, 0.1);
+    color: rgb(249, 24, 128) !important;
 }
 
 .twitter-quotes-option-number, .twitter-quotes-option svg {
-	margin-right: 4px;
-	font-weight: bold;
+    font-weight: bold;
+    margin-right: 4px;
 }
