@@ -11,6 +11,7 @@
     border-radius: 6px;
     display: inline-flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-right: 10px;
     padding: 5px;
     text-decoration: none;

@@ -53,8 +53,8 @@ let createQuotedRepliesButton = (article) => {
     const retweetIcon = article.querySelector('[data-testid="retweet"] svg, [data-testid="unretweet"] svg').outerHTML;
     const buttonColor = getElementCssStyle(article.querySelector('[data-testid="reply"] svg'), 'color');
 
-    const borderColor = getElementCssStyle(article.querySelector('[data-testid="reply"]')
-                .parentNode.parentNode.parentNode.parentNode.parentNode, 'border-top-color');
+    const borderColor = getElementCssStyle(article.querySelector('[data-testid="bookmark"]')
+                .parentNode.parentNode, 'border-top-color');
     const fontSize = getElementCssStyle(article.querySelector('[data-testid="app-text-transition-container"]')
                 .parentNode.nextElementSibling, 'font-size');
     const fontFamily = getElementCssStyle(article.querySelector('[data-testid="app-text-transition-container"]'),
