@@ -15,7 +15,7 @@ let addQuotedRepliesToDom = (retweetButton, quotedRepliesButton) => {
 };
 
 let getUsername = (article) => {
-    return article?.querySelector('[data-testid="User-Name"]')
+    return article.querySelector('[data-testid="User-Name"]')
         .querySelector('a')
         .href.split('/')
         .pop() || 'xxx';
@@ -92,7 +92,7 @@ let createQuotedRepliesButton = (article) => {
 };
 
 let addExtensionFeaturesToTweetArticle = (node) => {
-    let article = node.querySelector('article[tabindex="-1"]');
+    let article = node.querySelector('article[data-testid="tweet"][tabindex="-1"]');
     if (article) {
         if (shouldAddQuotedRepliesButton(article)) {
             let retweetButton = article.querySelector('[data-testid="retweet"], [data-testid="unretweet"]');
