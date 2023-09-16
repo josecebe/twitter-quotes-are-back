@@ -15,10 +15,10 @@ let addQuotedRepliesToDom = (retweetButton, quotedRepliesButton) => {
 };
 
 let getUsername = (article) => {
-    return article.querySelector('[data-testid="User-Name"]')
+    return article?.querySelector('[data-testid="User-Name"]')
         .querySelector('a')
         .href.split('/')
-        .pop();
+        .pop() || 'xxx';
 };
 
 let getHrefs = (article) => {
@@ -104,7 +104,7 @@ let addExtensionFeaturesToTweetArticle = (node) => {
 };
 
 let updateNumbers = (target, node) => {
-    let targetButton = document.querySelector(target);
+    let targetButton = node.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.querySelector(target);
     if (targetButton) {
         // Timeout of 1ms to let the number get updated in DOM
         setTimeout(() => {
