@@ -2,7 +2,7 @@
   "author": "josecebe",
   "manifest_version": 3,
   "name": "__MSG_twitterQuotesExtensionName__",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "__MSG_twitterQuotesExtensionDescription__",
   "default_locale": "en",
   "icons": {

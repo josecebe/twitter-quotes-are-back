@@ -103,6 +103,30 @@ let addExtensionFeaturesToTweetArticle = (node) => {
     }
 };
 
+let updateNumbers = (target, node) => {
+    let targetButton = document.querySelector(target);
+    if (targetButton) {
+        // Timeout of 1ms to let the number get updated in DOM
+        setTimeout(() => {
+            const newNumber = node.parentNode.querySelector('[data-testid="app-text-transition-container"]')?.textContent || 0;
+            const previousNumber = targetButton.textContent
+
+            if (newNumber !== previousNumber) {
+                targetButton.classList.add('twitter-quotes-animate-fadeout');
+                setTimeout(() => {
+                    targetButton.textContent = newNumber;
+                    targetButton.classList.add('twitter-quotes-animate-slide-up');
+                    targetButton.addEventListener('animationend', () => {
+                        targetButton.classList.remove('twitter-quotes-animate-fadeout', 'twitter-quotes-animate-slide-up');
+                    }, {
+                        once: true
+                    });
+                }, 200);
+            }
+        }, 1);
+    }
+};
+
 let startTwitterQuotes = () => {
     const observer = new MutationObserver((mutations) => {
         mutations.forEach((mutation) => {
@@ -111,7 +135,24 @@ let startTwitterQuotes = () => {
                     if (!node.querySelector) {
                         return;
                     }
-                    addExtensionFeaturesToTweetArticle(node);
+
+                    const theParentNode = node?.parentNode?.parentNode?.parentNode;
+                    if (theParentNode instanceof HTMLElement) {
+                        const dataTestId = theParentNode.getAttribute('data-testid');
+                        switch (dataTestId) {
+                            case 'like':
+                            case 'unlike':
+                                updateNumbers('.twitter-quotes-option-likes .twitter-quotes-option-number', theParentNode);
+                                break;
+                            case 'retweet':
+                            case 'unretweet':
+                                updateNumbers('.twitter-quotes-option-retweets .twitter-quotes-option-number', theParentNode);
+                                break;
+                            default:
+                                addExtensionFeaturesToTweetArticle(node);
+                                break;
+                        }
+                    }
                 });
             }
         });

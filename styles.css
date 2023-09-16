@@ -37,3 +37,35 @@
     font-weight: bold;
     margin-right: 4px;
 }
+
+.twitter-quotes-animate-fadeout {
+    animation-name: twitter-quotes-fadeout;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+}
+
+.twitter-quotes-animate-slide-up {
+    animation-name: twitter-quotes-slide-up;
+    animation-duration: 0.2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes twitter-quotes-fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes twitter-quotes-slide-up {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
