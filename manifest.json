@@ -15,7 +15,8 @@
         "script.js"
       ],
       "matches": [
-        "*://*.twitter.com/*"
+        "*://*.twitter.com/*",
+        "*://*.x.com/*"
       ],
       "run_at": "document_end"
     }
