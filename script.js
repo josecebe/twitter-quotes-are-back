@@ -27,13 +27,13 @@ let getHrefs = (article) => {
 };
 
 let getStatusHrefs = (hrefs, username) => {
-    return hrefs?.filter((href) => href.match(`https:\/\/twitter.com\/${username}\/status\/[0-9]+`));
+    return hrefs?.filter((href) => href.match(`https:\/\/(?:twitter|x).com\/${username}\/status\/[0-9]+`));
 };
 
 let getStatusIdFromHrefs = (statusHrefs) => {
     return statusHrefs
         .shift()
-        .match(/https:\/\/twitter.com\/[a-zA-Z0-9_]+\/status\/([0-9]+)/) // regex to get and capture status id
+        .match(/https:\/\/(?:twitter|x).com\/[a-zA-Z0-9_]+\/status\/([0-9]+)/) // regex to get and capture status id
         .pop();
 };
 
