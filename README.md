@@ -38,6 +38,7 @@ This extension is designed to work exclusively on Twitter. It adds convenient bu
 - Italiano (Italian)
 - Català (Catalan)
 - 日本語 (Japanese)
+- Türkçe (Turkish)
 
 ## Credits
 

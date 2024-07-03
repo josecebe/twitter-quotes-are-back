@@ -1,0 +1,26 @@
+{
+  "twitterQuotesExtensionName": {
+    "message": "Twitter Quotes are back!"
+  },
+  "twitterQuotesExtensionDescription": {
+    "message": "Twitter Quotes are back!"
+  },
+  "twitterQuotesRetweet": {
+    "message": "Yeniden Gönderi"
+  },
+  "twitterQuotesRetweetTitle": {
+    "message": "Bu gönderinin Yeniden Gönderilerini incele"
+  },
+  "twitterQuotesQuotes": {
+    "message": "Alıntılar"
+  },
+  "twitterQuotesQuotesTitle": {
+    "message": "Bu gönderinin Alıntılarını incele"
+  },
+  "twitterQuotesLikes": {
+    "message": "Beğeni"
+  },
+  "twitterQuotesLikesTitle": {
+    "message": "Bu gönderinin Beğenilerini incele"
+  }
+}
